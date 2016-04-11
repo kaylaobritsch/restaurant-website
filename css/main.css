@@ -5,6 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  font: normal 100%/1.3 "Open Sans";
   -moz-text-size-adjust: 100%;
 -ms-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
@@ -16,12 +17,82 @@ text-size-adjust: 100%;
   box-sizing: inherit;
 }
 
-img {
-  width: 25%;
+/* Navigation & Banner */
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #676767;
+  position: relative;
+  height: 60px;
 }
 
 a {
+  color: #000;
   text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+  float: left;
+  padding: 0;
+  font-size: 1.5rem;
+
+  position: absolute;
+  bottom: .25rem;
+  left: 1.3rem;
+}
+
+/* Hamburger Button */
+.top-nav {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+
+  position: absolute;
+  right: 30px;
+  top: 100%;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3rem;
+}
+
+.nav-check:checked ~ .top-nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
 }
 
 .btn {
@@ -43,4 +114,16 @@ a {
 .btn-ghost:hover {
   background-color: #333;
   border-color: #333;
+}
+
+.link-cards {
+  width: 25%;
+}
+
+.banner-small {
+  width: 100%;
+}
+
+.banner-large {
+  display: none;
 }

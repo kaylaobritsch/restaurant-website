@@ -47,16 +47,32 @@ h1 {
 
 /* Hamburger Button */
 .top-nav {
+  background-color: white;
   color: #fff;
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   list-style-type: none;
   display: none;
 
   position: absolute;
-  right: 30px;
-  top: 100%;
+  right: 1.3rem;
+  top: 5rem;
+}
+
+.top-nav li {
+  background-color: white;
+  text-align: center;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+}
+
+.top-nav li:hover a {
+  color: #fff;
+}
+
+.top-nav li:hover {
+  background-color: #676767;
+  cursor: pointer;
 }
 
 .nav-check {
@@ -93,6 +109,19 @@ h1 {
 
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
+}
+
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+
+    position: absolute;
+    right: 1.3rem;
+    top: 100%;
 }
 
 .btn {

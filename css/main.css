@@ -107,6 +107,14 @@ h1 {
   display: none;
 }
 
+#triangle {
+  display: none;
+}
+
+.nav-check:checked ~ #triangle {
+  display: block;
+}
+
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
 }

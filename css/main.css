@@ -21,12 +21,17 @@ body {
   margin: 0;
 }
 
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
 /* Navigation & Banner */
 
 header {
   background-color: #676767;
-  position: relative;
   height: 60px;
+  position: relative;
 }
 
 a {
@@ -36,10 +41,10 @@ a {
 
 h1 {
   color: #fff;
-  margin: 0;
   float: left;
-  padding: 0;
   font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
 
   position: absolute;
   bottom: .25rem;
@@ -51,22 +56,21 @@ h1 {
 .top-nav {
   background-color: white;
   color: #fff;
-  display: inline-block;
+  display: none;
   margin: 0;
   padding: 1rem;
   list-style-type: none;
-  display: none;
-  z-index: 10;
 
   position: absolute;
   right: 1.3rem;
   top: 5rem;
+  z-index: 10;
 }
 
 .top-nav li {
   background-color: white;
-  text-align: center;
   padding: 1rem 3.5rem 1rem 3.5rem;
+  text-align: center;
 }
 
 .top-nav li:hover a {
@@ -99,16 +103,16 @@ h1 {
 }
 
 #triangle {
-    width: 0;
-    height: 0;
-    border-bottom: 40px solid #fff;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    z-index: 10;
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid #fff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  z-index: 10;
 
-    position: absolute;
-    right: 1.3rem;
-    top: 100%;
+  position: absolute;
+  right: 1.3rem;
+  top: 100%;
 }
 
 .nav-open,
@@ -193,25 +197,20 @@ h2 + p {
 /* Link Cards */
 
 .link-cards {
-  margin: 1.3rem;
-  overflow: hidden;
-}
-
-.square {
-  width: 100%;
+  margin: 2.6rem 1.3rem 2.6rem 1.3rem;
   overflow: hidden;
 }
 
 .link-card1,
 .link-card3 {
-  display: inline-block;
+  float: left;
   position: relative;
   width: 49%;
 }
 
 .link-card2,
 .link-card4 {
-  display: inline-block;
+  float: right;
   position: relative;
   width: 49%;
 }
@@ -226,6 +225,11 @@ h2 + p {
   transform: translate(-50%, -50%);
 }
 
+.link-card3,
+.link-card4 {
+  padding-top: .25rem;
+}
+
 img + a {
   background-color: #333;
   color: #fff;
@@ -234,8 +238,7 @@ img + a {
   text-align: center;
   width: 100%;
   height: 50%;
-  padding: 1.5rem 2rem 5rem 2rem;
-  align-content: center;
+  padding: 1.5rem 2rem 0 2rem;
   overflow: hidden;
 }
 
@@ -243,3 +246,58 @@ img + a:hover {
   background-color: rgba(51, 51, 51, 0.50);
   color: #333;
 }
+
+/* Daily Specials Section */
+
+#eats h3:first-child {
+  padding-top: 2.6rem;
+  margin: 1.3rem 1.3rem 1.3rem 1.3rem;
+}
+
+dl {
+  margin: 0 1.3rem 2.6rem 1.3rem;
+}
+
+dt {
+  width: 5em;
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+dd {
+  margin: 0;
+  display: inline-block;
+  min-width: 9em;
+}
+
+#eats {
+  background-color: #ccc;
+  position: relative;
+}
+
+.poutine {
+  color: #333;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  padding: 1.3rem;
+}
+
+/* Meet the Chef Section */
+
+#chef {
+  position: relative;
+}
+
+.chef-content {
+  padding: 1.3rem;
+  background-color: rgba(51, 51, 51, 0.50);
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* Events Section */
+
+/* Hours Section */

@@ -183,13 +183,17 @@ h2 + p {
   margin: 2.6rem 1.3rem 2.6rem 1.3rem;
 }
 
+.banner {
+  position: relative;
+}
+
 .banner-content {
   text-align: center;
   width: 100%;
   z-index: 2;
 
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

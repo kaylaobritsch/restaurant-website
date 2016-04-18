@@ -101,7 +101,7 @@ h1 {
 #triangle {
     width: 0;
     height: 0;
-    border-bottom: 40px solid white;
+    border-bottom: 40px solid #fff;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     z-index: 10;
@@ -137,29 +137,6 @@ h1 {
   display: block;
 }
 
-/* Button Style */
-
-.btn {
-  display: inline-block;
-  color: #fff;
-  background-color: #333;
-  border-radius: 8px;
-  padding: 0.6em 0.75em 0.4em;
-  font-size: 1.25rem;
-  padding: .5rem;
-  text-align: center;
-}
-
-.btn-ghost {
-  background-color: white;
-  color: #333;
-}
-
-.btn-ghost:hover {
-  background-color: #333;
-  border-color: #333;
-}
-
 .banner-small {
   width: 100%;
 }
@@ -168,17 +145,37 @@ h1 {
   display: none;
 }
 
+/* Button Style */
+
+.btn {
+  background-color: #e0e1e2;
+  border: solid 6px #333;
+  border-radius: 15px;
+  color: #333;
+  display: inline-block;
+  padding: 0.6em 0.75em 0.4em;
+  font-size: 1.25rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
 /* Value Proposition */
 
 h2 {
   color: #333;
   font-family: 'Amatic SC', cursive;
-  font-size: 3.50rem;
+  font-size: 3rem;
   margin: 2.6rem 1.3rem 2.6rem 1.3rem;
 }
 
 h2 + p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 2.6rem 1.3rem 2.6rem 1.3rem;
 }
 
@@ -190,15 +187,59 @@ h2 + p {
   position: absolute;
   top: 100%;
   left: 50%;
-  position: absolute;
   transform: translate(-50%, -50%);
 }
 
 /* Link Cards */
 
-.link-card {
-  background-color: red;
-  float: left;
+.link-cards {
+  margin: 1.3rem;
+  overflow: hidden;
+}
+
+.square {
+  width: 100%;
+  overflow: hidden;
+}
+
+.link-card1,
+.link-card3 {
+  display: inline-block;
+  position: relative;
+  width: 49%;
+}
+
+.link-card2,
+.link-card4 {
+  display: inline-block;
+  position: relative;
+  width: 49%;
+}
+
+.eats,
+.chef,
+.events,
+.hours {
+  left: 50%;
+  position: absolute;
+  top: 75%;
+  transform: translate(-50%, -50%);
+}
+
+img + a {
+  background-color: #333;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
   text-align: center;
-  width: 50%;
+  width: 100%;
+  height: 50%;
+  padding: 1.5rem 2rem 5rem 2rem;
+  align-content: center;
+  overflow: hidden;
+}
+
+img + a:hover {
+  background-color: rgba(51, 51, 51, 0.50);
+  color: #333;
 }

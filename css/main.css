@@ -7,9 +7,9 @@
 html {
   font: normal 100%/1.3 "Open Sans";
   -moz-text-size-adjust: 100%;
--ms-text-size-adjust: 100%;
--webkit-text-size-adjust: 100%;
-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
 }
 
@@ -86,7 +86,7 @@ header nav a {
   transition-timing-function: ease-out;
 }
 
-.top-nav a:hover {
+header nav a:hover {
   background-color: #676767;
   color: #fff;
 
@@ -177,7 +177,7 @@ header nav a {
 
 h2 {
   color: #333;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 3rem;
   margin: 0 1.3rem 2.6rem 1.3rem;
 }
@@ -268,7 +268,6 @@ h3 {
   background-color: #ccc;
 }
 
-
 dl {
   margin: 0 0 2.6rem 1.3rem;
   font-weight: 300;
@@ -338,6 +337,7 @@ dd {
 #events {
   background-color: #ccc;
 }
+
 .circle-icon {
   padding: 1.3rem;
 }
@@ -381,13 +381,13 @@ figcaption {
 
 /* Coupon */
 
-.coupon {
+#coupon {
   background-color: #ccc;
   text-align: center;
   padding-bottom: 5.2rem;
 }
 
-.coupon img {
+#coupon img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -398,7 +398,7 @@ figcaption {
   position: relative;
 }
 
-.coupon h3 {
+#coupon h3 {
   color: #676767;
   margin: 0;
 
@@ -408,7 +408,7 @@ figcaption {
   transform: translate(-50%, 0);
 }
 
-.coupon h3:hover {
+#coupon h3:hover {
   color: #fff;
 }
 
@@ -497,13 +497,21 @@ footer nav a:hover {
   }
 
   .clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-}
+    content: " ";
+    display: table;
+    clear: both;
+  }
 
-  .coupon img {
+  #coupon img {
     padding-top: 2.6rem;
+  }
+
+  footer nav {
+    font-size: 1rem;
+  }
+
+  footer small {
+    font-size: .75rem;
   }
 
 }
@@ -515,9 +523,9 @@ footer nav a:hover {
     line-height: 1.4;
   }
 
-    h1 {
-      bottom: .15rem;
-    }
+  h1 {
+    bottom: .15rem;
+  }
 
   .banner-small {
     display: none;
@@ -526,6 +534,8 @@ footer nav a:hover {
   .banner-large {
     display: block;
   }
+
+  /* Navigation */
 
   .nav-label {
     display: none;
@@ -538,9 +548,9 @@ footer nav a:hover {
   .top-nav {
     background-color: #676767;
     display: block;
+    padding: 0;
     right: 1.3rem;
     top: 1.10rem;
-    padding: 0;
   }
 
   header nav a {
@@ -580,13 +590,8 @@ footer nav a:hover {
     padding-left: 1rem;
   }
 
-  .top-nav a:hover  {
+  .top-nav a:hover {
     color: #333;
-  }
-
-  .reservation {
-    float: right;
-    margin-right: 3rem;
   }
 
   .link-card1,
@@ -611,8 +616,12 @@ footer nav a:hover {
 
   .poutine-wrapper {
     float: right;
-    width: 35%;
+    width: 40%;
     margin: 2.6rem 1.3rem 2.6rem 0;
+  }
+
+  .poutine-wrapper h3 {
+    font-size: 1rem;
   }
 
   #eats dl {
@@ -623,16 +632,17 @@ footer nav a:hover {
     float: left;
   }
 
-  .poutine {
+  #eats h3:first-child {
     padding: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10rem;
   }
 
-  .poutine-wrapper h3 {
-    font-size: 1.25rem;
+  .poutine {
+    padding: 0;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
   }
 
   .chef-small {
@@ -646,6 +656,12 @@ footer nav a:hover {
 
   .chef-content {
     padding: 2.6rem 1.3rem 1.3rem 1.3rem;
+  }
+
+  .reservation {
+    float: right;
+    margin-right: 3rem;
+  }
 
 }
 
@@ -657,8 +673,8 @@ footer nav a:hover {
   }
 
   .banner-content {
-    text-align: left;
     margin-left: 2.6rem;
+    text-align: left;
   }
 
   .banner-content p {
@@ -674,19 +690,18 @@ footer nav a:hover {
   }
 
   .link-cards {
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
   }
 
   .eats-wrapper {
     margin-left: 2.6rem;
   }
 
-
   .poutine-wrapper {
-    width: 45%;
     margin: 0 2.6rem 0 0;
+    width: 45%;
   }
 
   .poutine {
@@ -706,9 +721,9 @@ footer nav a:hover {
   .icon2 {
     display: block;
     float: none;
-    width: 100%;
-    padding: 0;
     margin: 2.6rem;
+    padding: 0;
+    width: 100%;
   }
 
   #hours {
@@ -727,31 +742,30 @@ footer nav a:hover {
 
   #events {
     float: left;
-    width: 30%
+    width: 30%;
   }
 
   .coupon-wrapper {
     float: right;
-    width: 50%;
     margin-right: 2rem;
- }
+    width: 50%;
+  }
 
- footer nav {
-   text-align: left;
- }
-
- footer small {
+  footer nav {
     text-align: left;
- }
+  }
+
+  footer small {
+    text-align: left;
+  }
 
 }
 
-@media only screen (min-width: 90em) {
+@media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
     line-height: 1.5;
   }
-
 
 }

@@ -198,6 +198,7 @@ h2 + p {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 2;
 }
@@ -235,6 +236,7 @@ h2 + p {
   left: 50%;
   position: absolute;
   top: 75%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -405,6 +407,7 @@ figcaption {
   position: absolute;
   bottom: 2rem;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 
@@ -480,6 +483,7 @@ footer nav a:hover {
 
   .poutine {
     left: 50%;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
   }
 
@@ -641,6 +645,7 @@ footer nav a:hover {
 
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 10rem;
   }

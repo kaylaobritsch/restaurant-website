@@ -549,7 +549,6 @@ footer nav a:hover {
 
   h1 {
     bottom: .15rem;
-    padding-left: 2.6rem;
   }
 
   .banner-small {
@@ -573,7 +572,6 @@ footer nav a:hover {
   .top-nav {
     display: block;
     padding: 0;
-    right: 2.6rem;
     top: 1.5rem;
   }
 
@@ -693,6 +691,14 @@ footer nav a:hover {
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  h1 {
+    margin-left: 2.6rem;
+  }
+
+  .top-nav {
+    margin-right: 2.6rem;
   }
 
   .banner-content {
